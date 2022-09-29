@@ -54,7 +54,7 @@
       <!--Hero-->
       <section class="hero-page overlay">
         <h1 class="hero-header">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="button blue-button">
+        <button data-modal-open type="button" class="button blue-button">
           Замовити послугу
         </button>
       </section>
@@ -118,29 +118,38 @@
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="what-we-do-list">
-            <li class="item">
+            <li class="what-we-do-item">
               <img
                 class="image"
                 src="./images/img.jpg"
                 alt="Картинка роботи №1"
                 width="370"
               />
+              <div class="what-we-do-description">
+                <p>Десктопні додатки</p>
+              </div>
             </li>
-            <li class="item">
+            <li class="what-we-do-item">
               <img
                 class="image"
                 src="./images/img2.jpg"
                 alt="Картинка роботи №2"
                 width="370"
               />
+              <div class="what-we-do-description">
+                <p>Мобільні додатки</p>
+              </div>
             </li>
-            <li class="item">
+            <li class="what-we-do-item">
               <img
                 class="image"
                 src="./images/img3.jpg"
                 alt="Картинка роботи №3"
                 width="370"
               />
+              <div class="what-we-do-description">
+                <p>Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -435,5 +444,13 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>
+          <svg class="close-icon"><use href="./images/symbol-defs.svg#icon-close-back"></use></svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
