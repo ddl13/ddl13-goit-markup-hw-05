@@ -727,3 +727,7 @@ img {
   width: 18px;
   height: 18px;
 }
+
+.no-scroll {
+  overflow: hidden;
+}
